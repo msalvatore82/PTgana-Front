@@ -17,7 +17,6 @@ const Contract = () => {
   const [text, setText] = useState("");
   const { contracts, getContracts, deleteContract, addContract } = useContext(ContractsContext);
   const [contractAdded, setContractAdded] = useState(false);
-
   const [isModalVisible, setIsModalVisible] = useState(false);
   const showModal = () => {
     setIsModalVisible(true);
@@ -52,15 +51,15 @@ const Contract = () => {
 
   return (
     <div className="table-container">
-            <div className='img'>
+      <div className='img'>
         <a href="https://ganaenergia.com/" target="_blank" rel="noopener noreferrer"> <img src="https://ganaenergia.com/assets/img/gana-energia-logo-fix.svg" alt="" srcset="" /> </a>     </div>
       <div className="btn-add">
         <Button onClick={() => showModal()} >
           <GoPlus /> Nuevo
         </Button>
         <Button onClick={() => navigate(-1)} className="button-create-acount">
-            <AiFillBackward /> Volver atras
-          </Button>
+          <AiFillBackward /> Volver atras
+        </Button>
         <input onKeyUp={handleChange} placeholder="Buscar por nombre" name="text" className="input-search" />
         <AddContract visible={isModalVisible} setVisible={setIsModalVisible} />
 

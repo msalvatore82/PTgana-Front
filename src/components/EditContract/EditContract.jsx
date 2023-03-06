@@ -65,8 +65,8 @@ const EditContract = () => {
           
             >
                 <h2 className='text-header'>RELLENE LOS DATOS PARA EDITAR EL CONTRATO</h2>
-                <input Value={contract?.contract?.nombre || ""} onChange={(e) => setFormValues({ ...formValues, nombre: e.target.value })} name="nombre"/>
-                <input Value={contract?.contract?.apellido1 || ""} onChange={(e) => setFormValues({ ...formValues, apellido1: e.target.value })} name="apellido1"/>
+                <input Value={contract?.contract?.nombre || ""} onChange={(e) => setFormValues({ ...formValues, nombre: e.target.value })} name="nombre" placeholder="nombre"/>
+                <input Value={contract?.contract?.apellido1 || ""} onChange={(e) => setFormValues({ ...formValues, apellido1: e.target.value })} name="apellido1" />
                 <input Value={contract?.contract?.apellido2 || ""} onChange={(e) => setFormValues({ ...formValues, apellido2: e.target.value })} name="apellido2"/>
                 <input Value={contract?.contract?.documento || ""} onChange={(e) => setFormValues({ ...formValues, documento: e.target.value })} name="documento"/>
                 <input Value={contract?.contract?.cp || ""} onChange={(e) => setFormValues({ ...formValues, cp: e.target.value })} name="cp"/>

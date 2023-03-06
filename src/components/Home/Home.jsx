@@ -4,7 +4,9 @@ import AddContract from '../AddContract/AddContract';
 import "./Home.scss"
 
 
-const Home = () => {
+
+
+export default function Home()  {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const showModal = () => {
     setIsModalVisible(true);
@@ -27,4 +29,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+

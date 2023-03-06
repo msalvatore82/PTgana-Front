@@ -1,5 +1,6 @@
-import { Button, Form, Input, notification } from 'antd';
-import Modal from 'antd/es/modal/Modal';
+import { Button, Form, Input, notification, Modal } from 'antd';
+/* import Modal from 'antd/es/modal/Modal';
+ */
 import React, { useContext, useEffect, useState } from 'react';
 import { ContractsContext } from '../../context/ContractState';
 import axios from 'axios';
@@ -65,6 +66,7 @@ const AddContract = ({ visible, setVisible }) => {
         <div className='img-add'>
           <a href="https://ganaenergia.com/" target="_blank" rel="noopener noreferrer"> <img src="https://ganaenergia.com/assets/img/gana-energia-logo-fix.svg" alt="" srcset="" /> </a>     </div>
         <Form
+          data-testid="form"
           name="basic"
           labelCol={{ span: 8 }}
           wrapperCol={{ span: 30 }}
