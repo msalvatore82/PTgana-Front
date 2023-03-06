@@ -1,0 +1,49 @@
+@import "../../../colors.scss";
+.inp{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    gap: 0.1rem;
+}
+ 
+ .text-header{
+    text-align: center;
+  }
+
+  .input-localidad {
+    text-align: center;
+  }
+  .input-localidad {
+    margin-left: auto;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+    height: 2rem;
+    display: block;
+    text-align: right;
+  }
+
+  .input-localidad-text{
+    margin-left: 14rem;
+    margin-top: -0.4rem;
+    height: 2rem;
+    display: block;
+  }
+
+
+  .btn-adde{
+    width: 50%;
+    background-color: $btn;
+    margin-bottom: 0.5rem;
+    transition: all 0.3s ease-in-out, font-weight 0.5s ease-in-out;
+}
+
+.btn-adde:hover{
+
+    transform: scale(1.05);
+    font-weight: 900;
+    background-color: $btn;
+}
+
+.img-add{
+  width: 6rem;
+}

@@ -1,0 +1,31 @@
+@import "../../../colors.scss";
+
+
+.form-edit {
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    width: 50%;
+    box-shadow: 0px 0px 97px 5px rgba(0, 0, 0, 0.91);
+    -webkit-box-shadow: 0px 0px 97px 5px rgba(0, 0, 0, 0.91);
+    -moz-box-shadow: 0px 0px 97px 5px rgba(0, 0, 0, 0.91);
+}
+
+.form{
+    margin: 0.5rem;margin: auto;
+
+    .btn{
+        width: 50%;
+        background-color: $btn;
+        margin-bottom: 0.5rem;
+        transition: all 0.3s ease-in-out, font-weight 0.5s ease-in-out;
+    }
+
+    .btn:hover{
+    
+        transform: scale(1.2);
+        font-weight: 900;
+        background-color: $btn;
+    }
+}
