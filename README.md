@@ -3,7 +3,7 @@
 Para descargar el repositorio, en Visual Studio, abra una terminal y ejecute el siguiente comando:
 
 ```
-Frontend: $ git clone https://github.com/msalvatore82/PT-front
+Frontend: $ git clone https://github.com/msalvatore82/PTgana-Front
 Backtend: $ git clone https://github.com/msalvatore82/PTgana-Back
 
 ```
